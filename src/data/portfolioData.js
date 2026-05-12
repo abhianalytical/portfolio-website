@@ -7,11 +7,14 @@ import {
   FaGithub,
   FaInstagram,
   FaJava,
+  FaLeaf,
   FaLinkedin,
   FaMapMarkerAlt,
+  FaNodeJs,
   FaPhoneAlt,
   FaPython,
   FaReact,
+  FaTools,
 } from 'react-icons/fa';
 import {
   SiHtml5,
@@ -46,19 +49,70 @@ export const stats = [
   { label: 'Hackathon Win', value: 1, suffix: 'st' },
 ];
 
-export const skills = [
-  { name: 'Java', level: 88, category: 'Programming', icon: FaJava },
-  { name: 'Python', level: 84, category: 'Programming', icon: FaPython },
-  { name: 'JavaScript', level: 80, category: 'Programming', icon: SiJavascript },
-  { name: 'HTML', level: 92, category: 'Frontend', icon: SiHtml5 },
-  { name: 'CSS', level: 86, category: 'Frontend', icon: FaCss3Alt },
-  { name: 'Tailwind CSS', level: 82, category: 'Frontend', icon: SiTailwindcss },
-  { name: 'React', level: 78, category: 'Frontend', icon: FaReact },
-  { name: 'Node.js', level: 58, category: 'Backend', icon: FaCode },
-  { name: 'MySQL', level: 76, category: 'Database', icon: SiMysql },
-  { name: 'GitHub', level: 82, category: 'Tools', icon: FaGithub },
-  { name: 'VS Code', level: 90, category: 'Tools', icon: FaCode },
-  { name: 'OOP / DBMS / DSA', level: 80, category: 'Concepts', icon: FaDatabase },
+export const skillGroups = [
+  {
+    title: 'Programming Languages',
+    subtitle: 'Core coding foundation',
+    icon: FaCode,
+    accent: 'from-cyanGlow to-mintGlow',
+    skills: [
+      { name: 'Java', level: 80, icon: FaJava },
+      { name: 'Python', level: 70, icon: FaPython },
+      { name: 'JavaScript', level: 60, icon: SiJavascript },
+    ],
+  },
+  {
+    title: 'Frontend',
+    subtitle: 'Responsive user interfaces',
+    icon: FaReact,
+    accent: 'from-violetGlow to-cyanGlow',
+    skills: [
+      { name: 'HTML', level: 80, icon: SiHtml5 },
+      { name: 'CSS', level: 80, icon: FaCss3Alt },
+      { name: 'Tailwind CSS', level: 60, icon: SiTailwindcss },
+      { name: 'React', level: 70, icon: FaReact },
+    ],
+  },
+  {
+    title: 'Backend',
+    subtitle: 'APIs and server-side learning',
+    icon: FaNodeJs,
+    accent: 'from-mintGlow to-cyanGlow',
+    skills: [
+      { name: 'Spring Boot', level: 68, icon: FaLeaf },
+      { name: 'Node.js', level: 58, icon: FaNodeJs },
+    ],
+  },
+  {
+    title: 'Databases',
+    subtitle: 'Data storage and queries',
+    icon: FaDatabase,
+    accent: 'from-cyanGlow to-violetGlow',
+    skills: [
+      { name: 'MySQL', level: 70, icon: SiMysql },
+      { name: 'MongoDB', level: 60, icon: FaDatabase },
+    ],
+  },
+  {
+    title: 'Tools',
+    subtitle: 'Developer workflow',
+    icon: FaTools,
+    accent: 'from-violetGlow to-mintGlow',
+    skills: [
+      { name: 'GitHub', level: 70, icon: FaGithub },
+      { name: 'VS Code', level: 80, icon: FaCode },
+    ],
+  },
+  {
+    title: 'Concepts',
+    subtitle: 'Problem solving basics',
+    icon: FaDatabase,
+    accent: 'from-cyanGlow to-violetGlow',
+    skills: [
+      { name: 'OOP', level: 70, icon: FaCode },
+      { name: 'DSA', level: 70, icon: FaCode },
+    ],
+  },
 ];
 
 export const projects = [
